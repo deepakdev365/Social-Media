@@ -10,13 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:theme="@style/ThemeOverlay.AppCompat.Light">
+        android:background="@color/white">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/search_toolbar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/back">
+            >
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -26,14 +26,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginRight="19dp"
                     android:hint="Search..."
-                    android:drawableLeft="@drawable/search"
                     android:drawablePadding="6dp"
                     android:textSize="15dp"
+                    android:textColorHint="@color/lightblack"
                     android:textColor="@color/black"
-                    android:layout_marginStart="6dp"
-                    android:padding="58dp"/>
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+
+                    android:background="@color/white"
+                    android:padding="12dp"/>
 
                 <ImageView
                     android:id="@+id/search_fragment_icon"

@@ -98,15 +98,6 @@
             android:orientation="vertical"
             >
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Posts"
-                android:textSize="12dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-
-                />
-            <TextView
                 android:id="@+id/total_posts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -116,6 +107,16 @@
                 android:textColor="@color/black"
 
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
 
 
 
@@ -128,15 +129,6 @@
             android:gravity="center"
             android:orientation="vertical"
             >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Followers"
-                android:textSize="12dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-
-                />
             <TextView
                 android:id="@+id/total_followers"
                 android:layout_width="wrap_content"
@@ -147,6 +139,16 @@
                 android:textColor="@color/black"
 
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
 
 
 
@@ -160,15 +162,6 @@
             android:orientation="vertical"
             >
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Following"
-                android:textSize="12dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-
-                />
-            <TextView
                 android:id="@+id/total_following"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -178,6 +171,16 @@
                 android:textColor="@color/black"
 
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
 
 
 
@@ -187,9 +190,79 @@
 
 
     </LinearLayout>
+    <Button
+        android:id="@+id/edit_account_settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        />
 </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/mid_bar"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/full_name_profile_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fullname"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/bio_profilr_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        >
+        <ImageButton
+            android:id="@+id/image_grid_view_btn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/grid"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        <ImageButton
+            android:id="@+id/image_save_btn"
+            android:layout_width="1dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save_large_icon"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+    </LinearLayout>
 </LinearLayout>
 
 

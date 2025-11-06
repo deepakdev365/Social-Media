@@ -15,16 +15,10 @@ class SigninActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_signin)
         val signup_link_btn=findViewById<Button>(R.id.signup_link_btn)
-        val login=findViewById<Button>(R.id.login_btn)
-        val email=findViewById<EditText>(R.id.email_login)
-        val pass=findViewById<EditText>(R.id.password_login)
         signup_link_btn.setOnClickListener {
-            startActivity(Intent(this,SignUpActivity::class.java))
-            finish()
+            startActivity(Intent(this, SignUpActivity::class.java))
         }
-        login.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
-            finish()
-        }
+
+
     }
 }
